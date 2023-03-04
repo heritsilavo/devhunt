@@ -8,37 +8,75 @@
     <title>Document</title>
 </head>
 <body>
-    <div class='light x1'></div>
-    <div class='light x2'></div>
-    <div class='light x3'></div>
-    <div class='light x4'></div>
-    <div class='light x5'></div>
-    <div class='light x6'></div>
-    <div class='light x7'></div>
-    <div class='light x8'></div>
-    <div class='light x9'></div>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
     
-    <div class="sing-container">
-        <div class="head"></div>
-        <form action="get" class="sing">
-            <div class="input-box">
-                <input type="text" name="pseudo_in" required>
-                <label for="pseudo_in">votre pseudo</label>
+    <div class="container">
+        <div class="sing-container">
+            <div class="head"> 
+                <button class="back">back</button>
+                INSCRIPTION
             </div>
-            <div class="input-box">
-                <input type="text" name="matricule_in" required>
-                <label for="matricule_in">numero matricule</label>
-            </div>
-            <div class="input-box">
-                <input type="password" name="pass_in" required>
-                <label for="pass_in">mot de passe</label>
-            </div>
-            <div class="input-box">
-                <input type="password" name="pass_in2" required>
-                <label for="pass_in2">confirmer votre mot de passe</label>
-            </div>
-        </form>
-    </div>er
+            <form method="get" class="sing">
+                <div class="input-box">
+                    <input type="text" name="pseudo_in" id="pseudo_in" required>
+                    <label for="pseudo_in">Votre pseudo</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="matricule_in" id="matricule_in" required>
+                    <label for="matricule_in">numero matricule</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass_in" id="pass_in" required>
+                    <label for="pass_in">mot de passe</label>
+                    <p class="errMDP">*les mots de passes de correspondent pas</p>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass_in2" id="pass_in2" required>
+                    <label for="pass_in2" id="passe_in2">confirmer votre mot de passe</label>
+                    <p class="errMDP">*les mots de passes de correspondent pas</p>
+                </div>
+                <div class="input-select-box">
+                    <label for="niveau_in">Niveau: </label>
+                    <select name="niveau_in" id="niveau_in">
+                        <option value="L1">L1</option>
+                        <option value="L2">L2</option>
+                        <option value="l3">L3</option>
+                        <option value="M1">M1</option>
+                        <option value="M2">M2</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="mail" name="mail_in" required>
+                    <label for="mail_in">Entrer votre addresse mail</label>
+                </div>
+                <div class="input-file-box">     
+                    <div class="box__input">
+                        <div class="drop-zone">
+                            <span class="drop-zone__prompt">Cliquer içi por ajouter un photos de profile(.png, .jpg, .jpeg,.ico)</span>
+                            <input type="file" accept=".png, .jpg, .jpeg,.ico" name="myFile" class="drop-zone__input">
+                        </div>  
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="inscrire">s'inscrire</button>
+                    <button id="reset" type="reset">anuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="signUp.js"></script>
 </body>
 </html>

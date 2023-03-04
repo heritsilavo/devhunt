@@ -23,7 +23,7 @@ window.addEventListener('resize',function(e) {
     }else{
         if(loginShow){
             document.querySelector('.login-container').style.animation="hide-login590 .5s forwards";
-        loginShow=false;
+            loginShow=false;
         }
     }
 })
