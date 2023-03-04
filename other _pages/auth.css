@@ -38,6 +38,26 @@ body{
         transform: translateX(0%);
     }
 }
+@keyframes show-login590 {
+    0%{
+        width: 350%;
+        transform: translateX(180%);
+    }
+    100%{
+        width: 350%;
+        transform: translateX(0%);
+    }
+}
+@keyframes hide-login590 {
+    0%{
+        width: 350%;
+        transform: translateX(0%);
+    }
+    100%{
+        width: 350%;
+        transform: translateX(180%);
+    }
+}
 
 
 
@@ -148,6 +168,25 @@ body{
 .se-souvenir input{
     accent-color: #9b59b6;
 }
+@media screen and (max-width:750px) {
+    .se-souvenir label{
+        font-size: .9em;
+    }
+    .buttons button{
+        padding: 8px;
+        font-size: .9em;
+    }
+}
+@media screen and (max-width:571px) {
+    .se-souvenir label{
+        font-size: .7em;
+    }
+    .buttons button{
+        padding: 6px;
+        font-size: .7em;
+    }
+}
+/*hide*/
 .hide{
     display: inline-block;
     width: 20px;
@@ -166,12 +205,23 @@ body{
     width: 100%;
 }
 
+@keyframes animHide {
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: -30%;
+    }
+}
 
 
 
 
 
 
+
+
+/*acceuil*/
 .login-pres{
     width: 100vw;
     height: 100vh;
@@ -180,32 +230,81 @@ body{
     display: inline-block;
 }
 .context {
+    font-family: cursive;
     z-index: 10;
     position: absolute;
     width: 100vw;
     height: 100vh;
 }
 .acceuil{
-    
+    transition: all .2s;
     width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .loginButt{
     cursor: pointer;
     padding:15px 25px;
+    margin-top: 5%;
     background-color: rgb(30, 192, 33);
     border: none;
     outline: none;
     border-radius: 10px;
 }
 .context h1{
-    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10%;
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
 }
+.context .texte{
+    margin-top: 10%;
+    width: 90%;
+}
+@media screen and (max-width:870px) {
+    .context h1{
+        font-size: 30px;
+    }
+    .context .texte{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:870px) {
+    .context h1{
+        font-size: 25px;
+    }
+    .context .texte{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:590px) {
+    .acceuil{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .context h1{
+        font-size: 30px;
+    }
+    .context .texte{
+        font-size: 20px;
+    }
+    .loginButt{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/*backgground*/
 .area{ 
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
