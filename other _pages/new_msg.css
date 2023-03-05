@@ -43,23 +43,35 @@ header{
 
 
 .caroussel{
-    overflow: hidden;
+    overflow-y: scroll;
     color: aliceblue;
     margin-top: 3%;
-    width: 80%;
+    width:100%;
     height: 85%;
     background-color: var(--col-header);
     position: relative;
 }
 .page{
-    position: absolute;
-    top: 0;left: 0;
+    position: relative;
     width: 100%;
     height: 100%;
 }
-
-
-
+.p1{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.p3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -74,12 +86,7 @@ header{
 .p1 h1{
     text-align: center;
 }
-.p1{
-    left: 0%;
-    display:  flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .p1 .guide{
     width: 80%;
     height: 45%;
@@ -130,27 +137,6 @@ header{
 .p1 .input-box input:valid ~ label{
     transform: translateY(-10px);
 }
-.p1 .buttons{
-    width: 80%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-.p1 .buttons button{
-    cursor: pointer;
-    color: whitesmoke;
-    font-size: 1em;
-    border: none;
-    outline: none;border-radius: 15px;
-    height: 100%;
-    width: 40%;
-}
-.p1 .buttons button:nth-child(1){
-    background-color: #3a64fd;
-}
-.p1 .buttons button:nth-child(2){
-    background-color: #26e200;
-}
 @media screen and (max-width:680px){
     .guide ul{
         margin-top: -10px;
@@ -175,13 +161,7 @@ header{
 
 
 /*p2*/
-.p2{
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+
 .p2 #form2{
     width: 95%;
     height: 80%;
@@ -229,7 +209,6 @@ header{
     height: 100%;
 }
 .p2 .contenu{
-    height: 80%;
     overflow-y: scroll;
     flex-direction: column;
     align-items: center;
@@ -240,27 +219,6 @@ header{
 }
 .p2 .reset_msg{
     position: absolute;right: 2%;
-}
-.p2 .buttons2{
-    width: 100%;
-    height: 10%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.p2 .buttons2 button{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: whitesmoke;
-    font-size: 1.1em;
-    font-family: cursive;
-    margin: 0px 10px;
-    padding: 0px 5px;
-    cursor: pointer;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
 }
 @media screen and (max-width:680px) {
     .p2 h1{
@@ -295,12 +253,7 @@ header{
 
 
 /*p3*/
-.p3{
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .p3 h1{
     font-size: 1.3em;
     margin: 20px 0px;

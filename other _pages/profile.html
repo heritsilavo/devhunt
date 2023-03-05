@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="logo" class="logo head-left">
+        </a>
+        <div class="head-right">
+            <div class="pseudo">
+                <img src="../img/pngegg.png" alt="" class="pdp">
+                <span><span>@</span><p>mon_pseudo</p></span>
+                <ul>
+                    <li>Profil</li>
+                    <li>Nouveau message</li>
+                    <li>Deconnection</li>
+                </ul>
+            </div>
+            <div class="recherche">
+                <input type="search" name="search" value="" id="search_in" placeholder="Rechercher">
+                <button><img src="../img/_blanc.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+        </div >
+    </div>
+    <div class="sec">
+        <nav>
+            <div class="pdp_G"></div>
+            <div class="infos"></div>
+        </nav>
+        <section>
+            <div class="quest">
+                <div class="filtre">
+                    <label for="tri">trier par</label>
+                    <select name="tri" id="tri">
+                        <option value="">plus reçent</option>
+                        <option value="">plus ançien</option>
+                        <option value="">plus votés</option>
+                    </select>
+                </div>
+
+                <div class="quest-list">
+                    <h1>liste de toutes les questions</h1>
+                    <div class="quest-box">
+                        <span class="aut">@</span><span class="aut auteur">auteur</span>   
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aperiam.
+                            </div>
+                            <div class="rep_foot">
+                                <div class="foot-box">
+                                    <span>0</span>
+                                    <span>tags</span>
+                                </div>
+                                <div class="foot-box">
+                                    <span>0</span>
+                                    <span>votes</span>
+                                </div>
+                                
+                                <div class="foot-box">
+                                    <span>le</span>
+                                    <span>0000-00-00</span>
+                                </div>
+                                <div class="foot-box btn-voter">
+                                    <span>voter</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
