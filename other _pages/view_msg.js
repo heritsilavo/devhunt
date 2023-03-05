@@ -14,8 +14,9 @@ document.querySelectorAll('.filtre-i').forEach(element => {
         element.classList.add("activeFilter");
     })
 });
+
 //------------------------
-var contenu_msg=[];
+/*var contenu_msg=[];
 document.querySelector('.image').addEventListener('click',function(e) {
     var contenu=`
         <label for="file_in" id="img_lab">cliquer içi pour ajouter l'image</label>
@@ -31,10 +32,10 @@ document.querySelector('.image').addEventListener('click',function(e) {
         ref:child.childNodes[2]
     })
     console.log(contenu_msg);
-})
+})*/
 
 
-
+/*
 document.querySelector('.texte').addEventListener('click',function(e) {
     var contenu=`<textarea name="textarea" id="text_cont" cols="100" rows="5"></textarea>`
     var child =document.createElement('div');
@@ -48,7 +49,7 @@ document.querySelector('.texte').addEventListener('click',function(e) {
     })
     console.log(contenu_msg);
 })
-
+*/
 
 
 document.querySelector('.reset_msg').addEventListener('click',function(e) {

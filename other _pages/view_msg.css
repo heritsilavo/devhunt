@@ -103,6 +103,10 @@ section div{
     border-right: 1px solid whitesmoke;
 }
 .p2 #text_cont{
+    background-color: var(--col-header);
+    font-size: 1em;
+    color: whitesmoke;
+    font-family: cursive;
     width: 100%;
     resize: vertical;
 }

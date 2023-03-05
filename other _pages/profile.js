@@ -14,3 +14,9 @@ document.querySelectorAll('.filtre-i').forEach(element => {
     })
 });
 
+document.querySelector('.b').addEventListener('click',function(e) {
+    document.querySelector('.modif').style.animation='monter .3s forwards';
+})
+document.querySelector('#res').addEventListener('click',function(e) {
+    document.querySelector('.modif').style.animation='descend .3s forwards';
+})

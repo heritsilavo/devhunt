@@ -43,11 +43,12 @@ header{
 
 
 .caroussel{
+    border-radius: 20px;
     overflow-y: scroll;
     color: aliceblue;
     margin-top: 3%;
-    width:100%;
-    height: 85%;
+    width:80%;
+    height: 80%;
     background-color: var(--col-header);
     position: relative;
 }
@@ -88,7 +89,7 @@ header{
 }
 
 .p1 .guide{
-    width: 80%;
+    width: 94%;
     height: 45%;
     margin: 20px 0px;
     background-color: #0084ff64;
@@ -107,7 +108,7 @@ header{
 }
 .p1 .input-box{
     cursor: text;
-    width: 80%;
+    width: 100%;
     height: 50px;
     border-bottom: 1px solid;
     position: relative;margin: 20px 0px;
@@ -161,9 +162,8 @@ header{
 
 
 /*p2*/
-
 .p2 #form2{
-    width: 95%;
+    width: 94%;
     height: 80%;
     border: 1px solid;
     overflow: hidden;
@@ -186,6 +186,11 @@ header{
     border-right: 1px solid whitesmoke;
 }
 .p2 #text_cont{
+    background-color: var(--col-header);
+    font-size: 1em;
+    color: whitesmoke;
+    font-family: cursive;
+    
     display: inline-block;
     width: 100%;
     resize: vertical;
@@ -260,7 +265,7 @@ header{
 }
 #form3{
     display: inline-block;
-    width: 95%;
+    width: 100%;
     height: 80%;
 }
 .tags3{
@@ -362,7 +367,7 @@ header{
     height: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .buttons3 button{
     border: none;
@@ -374,12 +379,19 @@ header{
     margin: 0px 10px;
     padding: 0px 5px;
     cursor: pointer;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
+    
 }
-
-
-
+#sub3{
+    position: absolute;
+}
+#suivant3{
+    color: #081a10;
+    margin-top: 50px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    background-color: rgb(1, 255, 192);
+}
 
 
 

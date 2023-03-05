@@ -12,6 +12,8 @@ function getTitre() {
 
 
 var contenu_msg=[];
+//------------------------
+/*var contenu_msg=[];
 document.querySelector('.image').addEventListener('click',function(e) {
     var contenu=`
         <label for="file_in" id="img_lab">cliquer içi pour ajouter l'image</label>
@@ -27,11 +29,12 @@ document.querySelector('.image').addEventListener('click',function(e) {
         ref:child.childNodes[2]
     })
     console.log(contenu_msg);
-})
+})*/
 
 
+/*
 document.querySelector('.texte').addEventListener('click',function(e) {
-    var contenu=`<textarea name="textarea" id="text_cont" rows="10"></textarea>`
+    var contenu=`<textarea name="textarea" id="text_cont" cols="100" rows="5"></textarea>`
     var child =document.createElement('div');
     child.setAttribute("class","texte_in");
     child.innerHTML=contenu.trim();
@@ -43,20 +46,15 @@ document.querySelector('.texte').addEventListener('click',function(e) {
     })
     console.log(contenu_msg);
 })
-
-document.querySelector('.texte').click();
-
-document.querySelector('.reset_msg').addEventListener('click',function(e) {
-    document.querySelector('.contenu').innerHTML="";
-    contenu_msg=[];
-})
-
+*/
 
 function getMsgContenu() {
-    contenu_msg.forEach(element => {
+    /*
+        contenu_msg.forEach(element => {
         element.contenu=element.ref.value;
     });
-    return contenu_msg;
+    */
+    return document.querySelector('.p2 #text_cont').value;
 }
 ///--------content_msg          : values
 
@@ -104,8 +102,12 @@ function getTags() {
     return msg_tags;
 }
 
+
+document.getElementById('sub3').style.display="none";
+
 document.getElementById('suivant3').addEventListener('click',function() {
     console.log(getTitre());
     console.log(getMsgContenu());
     console.log(getTags());
+    document.getElementById('sub3').click();
 })

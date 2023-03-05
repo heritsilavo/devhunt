@@ -21,6 +21,12 @@ body{
     justify-content: space-evenly;
     position: relative;
 }
+.auteur{
+    color: aqua;
+}
+#h1{
+    text-align: center;
+}
 
 
 
@@ -31,14 +37,62 @@ body{
 
 
 
-
-
-
-
-
-.quest-box{
+.filtre{
     border-radius: 10px;
-    width: 99%;
+    display: flex;
+    color: var(--col-txt);
+    background-color: var(--col-header);
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.filtre select,
+.filtre label{
+    margin: 0px 10px;
+    width: 20%;
+}
+.filtre select{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: cursive;
+    font-size: 1.4em;
+    height: 60%;
+    background-color: transparent;
+    color: var(--col-txt);
+}
+.filtre label{
+    font-size: 1.4em;
+}
+option{
+    outline: none;
+    border: none;
+    background-color: #081a10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quest-list{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--col-header);
+}
+.quest-box{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 99.8%;
     height: auto;
     border: 1px solid lightblue;
 }
@@ -64,11 +118,8 @@ body{
     width: 10%;
     height: 100%;
     padding: 5px 0px;
-    border-right:1px solid var(--col-txt);
-    border-left:1px solid var(--col-txt);
-
 }
-.msg_foot{
+._foot{
     position: relative;
     height: 20%;
     border-top: 1px solid var(--col-txt);
@@ -79,9 +130,9 @@ body{
 .quest-box .btn-repondre,
 .quest-box .btn-voter{
     width: 20%;
-    margin: 5px 10px;
+    border-bottom-right-radius: 10px;
     float: right;
-    border: 1px solid var(--col-txt);
+    border-left: 1px solid var(--col-txt);
 }
 
 
@@ -104,6 +155,7 @@ body{
 
 
 nav{
+    border-radius: 20px;
     background-color: var(--col-header);
     color: var(--col-txt);
     margin-top: 3.5%;
@@ -121,28 +173,142 @@ nav{
      margin-top: 3.5%;
      height: 85vh;
      background-color: transparent;
-     background-color: var(--col-header);
      position: relative;
+     display: flex;
+     align-items: flex-start;
  }
- section::-webkit-scrollbar {
-     display: none;
- }
+.pdp_G2,
 .pdp_G{
     margin-top: 10px;
     display: inline-block;
     background-color: #000;
     width: 30vh;
     height: 30vh;
+    overflow: hidden;
     border-radius: 100%;
+    position: relative;
+}
+.pdp_G2 img,
+.pdp_G img{
+    width: 100%;
 }
 .infos{
+    border-radius: 20px;
+    background-color: #2e3e354c;
+    width: 90%;
+    height: 50%;
+}
+.infos ul{
+    margin-left:50px;
+    list-style: none;
+}
+.li{
+    padding: 10px 0px;
     width: 100%;
-    height: 60%;
+}
+.li div{
+    display: inline;
+}
+.li .char{
+    color: var(--col-txt);
+}
+.li .value{
+    color: aqua;
+}
+.b{
+    font-family: cursive;
+    color: var(--col-txt);
+    outline: none;
+    border-radius: 20px;
+    background-color: #4e54c8;
+    border: none;
+    font-size: 1.4em;
+    width: 250px;
+    height: 50px;
 }
 
 
 
 
+
+
+
+
+.modif form{
+    width: 80%;
+}
+.modif{
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;height: 100%;
+    background-color: var(--col-header);
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: all .3s;
+}
+.modif ul{
+    width: 100%;
+    list-style: none;
+}
+.pdp_G2 p{
+    display: none;
+    position: absolute;
+    top:40%;
+    left:20%;
+}
+.pdp_G2:hover p{
+    display: block;
+}
+.pdp_G2 img{
+    cursor: pointer;
+}
+.pdp_G2 input{
+    opacity: 0;
+}
+.li input{
+    border: 1px solid var(--col-txt);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--col-txt);
+}
+.buttons2{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons2 button{
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 1.2em;
+    border: 1px solid var(--col-txt);
+    font-family: cursive;
+    color: var(--col-txt);
+    padding: 15px 20px;
+}
+
+@keyframes monter {
+    0%{
+        opacity: 0;
+        top: 100%;
+    }
+    100%{
+        opacity: 1;
+        top: 0%;
+    }
+}
+@keyframes descend {
+    0%{
+        opacity: 1;
+        top: 0%;
+    }
+    100%{
+        opacity: 0;
+        top: 100%;
+    }
+}
 
 
 
@@ -254,13 +420,17 @@ header{
     }
 }
 
-
+nav button{
+    cursor: pointer;
+}
 
 header a{
     display: block;
     width: 20%;
     height: 100%;
 }
+
+
 
 
 
