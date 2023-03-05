@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view_msg.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="../img/logo.png" alt="logo" class="logo head-left">
+        </a>
+        <div class="head-right">
+            <div class="pseudo">
+                <img src="../img/pngegg.png" alt="" class="pdp">
+                <span><span>@</span><p>mon_pseudo</p></span>
+                <ul>
+                    <li>Profil</li>
+                    <li>Nouveau message</li>
+                    <li>Deconnection</li>
+                </ul>
+            </div>
+            <div class="recherche">
+                <input type="search" name="search" value="" id="search_in" placeholder="Rechercher">
+                <button><img src="../img/_blanc.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+        </div >
+    </div>
+    <div class="sec">
+       <nav>
+        <div class="filtre">
+            <h1>Filtrer les reponses:</h1>
+            <ul>
+                <li class="active">plus recent</li>
+                <li>plus ancien</li>
+                <li>nombre de vote</li>
+            </ul>
+        </div>
+        <div class="tag-list">
+            <h1>Liste des tags:</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+        </div>
+       </nav>
+       <section>
+            <div class="question">
+                <h1>Titre du question</h1>
+                <span class="aut">@</span><span class="aut auteur">auteur</span>   
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aperiam.
+                </div>
+                <div class="msg_foot">
+                    <div class="foot-box">
+                        <span>0</span>
+                        <span>tags</span>
+                    </div>
+                    <div class="foot-box">
+                        <span>0</span>
+                        <span>votes</span>
+                    </div>
+                    
+                    <div class="foot-box">
+                        <span>le</span>
+                        <span>0000-00-00</span>
+                    </div>
+                    <div class="foot-box btn-voter">
+                        <span>voter</span>
+                    </div>
+                    <div class="foot-box btn-repondre">
+                        <span> repondre</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="filtre2">
+                <h1>Filtrer les reponses:</h1>
+                <ul>
+                    <li class="active">plus recent</li>
+                    <li>plus ancien</li>
+                    <li>nombre de vote</li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            <div class="reponses">
+                <h1>Les reponses a ce question</h1>
+                        <div class="reponse-box">
+                            <span class="aut">@</span><span class="aut auteur">auteur</span>   
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aperiam.
+                            </div>
+                            <div class="rep_foot">
+                                <div class="foot-box">
+                                    <span>0</span>
+                                    <span>tags</span>
+                                </div>
+                                <div class="foot-box">
+                                    <span>0</span>
+                                    <span>votes</span>
+                                </div>
+                                
+                                <div class="foot-box">
+                                    <span>le</span>
+                                    <span>0000-00-00</span>
+                                </div>
+                                <div class="foot-box btn-voter">
+                                    <span>voter</span>
+                                </div>
+                            </div>
+                        </div>  
+            </div>
+            
+
+            <div class="repondre">
+                <div class="page p2">
+                    <h1>Ecrire votre reponse</h1>
+                    <form id="form2">
+                        <div class="add">
+                            <div class="texte">ajouter du texte</div>
+                            <div class="image">ajouter un image</div>
+                            <div class="reset_msg">Reinitianiser</div>
+                        </div>
+                        <div class="contenu"></div>
+                        <div class="buttons2">
+                            <button id="retour2" type="reset"><a href="#">retourner en haut</a> </button>
+                            <button id="suivant2" type="submit">Repondre</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+       </section>
+    </div>
+    <script src="view_msg.js"></script>
+</body>
+</html>

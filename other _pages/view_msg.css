@@ -1,6 +1,8 @@
+
 :root{
     --col-body:#122b87;
     --col-header:#081a10;
+    --col-txt:antiquewhite;
 }
 *{
     transition: all .3s;
@@ -11,27 +13,13 @@ body{
     overflow: hidden;
     background-color: var(--col-body);
 }
-header{
-    z-index: 999999;
-    background-color: var(--col-header);
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-}
-.head-left{
-    height: 100%;
-    position: absolute;
-    left: 0;
-}
 .sec{
     font-family: cursive;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
 }
 
@@ -40,147 +28,49 @@ header{
 
 
 
-
-
-.caroussel{
-    overflow: hidden;
-    color: aliceblue;
-    margin-top: 3%;
-    width: 80%;
-    height: 85%;
-    background-color: var(--col-header);
-    position: relative;
+nav{
+   color: var(--col-txt);
+   margin-top: 3.5%;
+   height: 90vh;
+   width: 20vw;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
 }
-.page{
-    position: absolute;
-    top: 0;left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*p1*/
-.p1 h1{
-    text-align: center;
-}
-.p1{
-    left: 0%;
-    display:  flex;
-    flex-direction: column;
-    align-items: center;
-}
-.p1 .guide{
-    width: 80%;
-    height: 45%;
-    margin: 20px 0px;
-    background-color: #0084ff64;
-}
-.p1 .guide h4{
-    text-align: center;
-    font-size: 1.5em;
-}
-.p1 .guide ul{
-    list-style:decimal;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.p1 .guide ul li{
-    padding: 10px 10px;
-}
-.p1 .input-box{
-    cursor: text;
-    width: 80%;
-    height: 50px;
-    border-bottom: 1px solid;
-    position: relative;margin: 20px 0px;
-}
-.p1 .input-box input{
-    font-family: cursive;
-    color: white;
-    font-size: 1.1em;
-    border: none;
-    outline: none;
+section{
+    color: var(--col-txt);
+    overflow-y: scroll;
+    width: 75vw;
+    margin-top: 3.5%;
+    height: 90vh;
     background-color: transparent;
+    position: relative;
+}
+section::-webkit-scrollbar {
+    display: none;
+}
+section div{
+    margin-top: 10px;
+    background-color: var(--col-header);
+}
+
+
+
+
+
+
+
+
+.repondre{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.p1 .getTitle{
-    width: 80%;
-}
-.p1 .input-box label{
-    transition: all .3s;
-    cursor: text;
-    position: absolute;
-    left: 0;
-    color: cornflowerblue;
-    transform: translateY(10px);
-}
-.p1 .input-box input:focus ~ label,
-.p1 .input-box input:valid ~ label{
-    transform: translateY(-10px);
-}
-.p1 .buttons{
-    width: 80%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-.p1 .buttons button{
-    cursor: pointer;
-    color: whitesmoke;
-    font-size: 1em;
-    border: none;
-    outline: none;border-radius: 15px;
-    height: 100%;
-    width: 40%;
-}
-.p1 .buttons button:nth-child(1){
-    background-color: #3a64fd;
-}
-.p1 .buttons button:nth-child(2){
-    background-color: #26e200;
-}
-@media screen and (max-width:680px){
-    .guide ul{
-        margin-top: -10px;
-    }
-    .guide ul li{
-        margin: 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*p2*/
 .p2{
     left: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 .p2 #form2{
     width: 95%;
@@ -206,13 +96,12 @@ header{
     border-right: 1px solid whitesmoke;
 }
 .p2 #text_cont{
-    display: inline-block;
     width: 100%;
     resize: vertical;
 }
 .p2 .image_in{
     border: 1px dashed greenyellow;
-    width: 100%;
+    width: 84%;
     height: 30px;
     position: relative;
     display: flex;
@@ -220,7 +109,6 @@ header{
 }
 .p2 #file_in{
     position: absolute;
-    width: 100%;
     display: none;
 }
 .p2 #img_lab{
@@ -231,9 +119,9 @@ header{
 .p2 .contenu{
     height: 80%;
     overflow-y: scroll;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 .p2 .contenu::-webkit-scrollbar {
     display: none;
@@ -261,6 +149,11 @@ header{
     cursor: pointer;
     border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke;
+}
+.buttons2 button a:active,
+.buttons2 button a{
+    text-decoration: none;
+    color: var(--col-txt);
 }
 @media screen and (max-width:680px) {
     .p2 h1{
@@ -292,198 +185,275 @@ header{
 
 
 
+.reponses{
+    width: 100%;
+    height: auto;
+}
+.reponses .auteur{
+    color: rgb(127, 58, 255);
+    display: flex;
+    align-items: center;
+}
+.reponses .aut{
+    cursor: pointer;
+    display: inline;
+}
+.reponses .foot-box{
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    padding: 5px 0px;
+    border-right:1px solid var(--col-txt);
+    border-left:1px solid var(--col-txt);
+}
+.rep_foot{
+    position: relative;
+    height: 20%;
+}
+.reponses .foot-box:nth-child(3){
+    width: 20%;
+}
+.reponses .btn-voter{
+    margin: 5px 10px;
+    float: right;
+    border: 1px solid var(--col-txt);
+}
+.reponse-box{
+    margin-left: 2%;
+    width: 96%;
+    border: 1px solid lightblue;
+}
 
 
-/*p3*/
-.p3{
-    left: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+.question h1,
+.reponses h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--col-txt);
+}
+.question .auteur{
+    color: aqua;
+    display: flex;
+    align-items: center;
+}
+.question .aut{
+    cursor: pointer;
+    display: inline;
+}
+.question .foot-box{
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    padding: 5px 0px;
+    border-right:1px solid var(--col-txt);
+    border-left:1px solid var(--col-txt);
+
+}
+.msg_foot{
+    position: relative;
+    height: 20%;
+    border-top: 1px solid var(--col-txt);
+}
+.question .foot-box:nth-child(3){
+    width: 25%;
+}
+.question .btn-repondre,
+.question .btn-voter{
+    width: 20%;
+    margin: 5px 10px;
+    float: right;
+    border: 1px solid var(--col-txt);
+}
+
+
+
+
+
+
+
+
+
+
+nav div{
+    background-color: var(--col-header);
+}
+.tag-list{
+    border-radius: 20px;
+    width: 100%;
+    height: 68%;
+}
+.tag-list h1{
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+}
+.tag-list h1{
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+ }
+ .tag-list ul{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .tag-list ul li{
+     user-select: none;
+     cursor: pointer;
+     margin:2px 0px;
+     padding: 5px 0px;
+     text-align: center;
+     width: 60%;
+ }
+ .tag-list ul li:hover{
+    border-left: 1px solid var(--col-txt);
+    border-right: 1px solid var(--col-txt);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filtre{
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
+}
+.filtre h1{
+   font-size: 1.4em;
+   text-decoration: underline;
+   text-align: center;
+   padding: 10px;
+}
+.filtre ul{
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.p3 h1{
-    font-size: 1.3em;
-    margin: 20px 0px;
-}
-#form3{
-    display: inline-block;
-    width: 95%;
-    height: 80%;
-}
-.tags3{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.tags3 .list-tag{
-    overflow-y: scroll;
-    border-radius: 20px;
-    width: 45%;
-    height: 95%;
-    border: 1px solid whitesmoke;
-}
-
-.list-tag h1{
-    text-align: center;
-}
-.list-tag ul{
-    margin: 0% 10%;
-    list-style:none;
-}
-.list-tag ul li{
+.filtre ul li{
     user-select: none;
     cursor: pointer;
-    width: 40%;
-    padding: 4px;
-    margin: 5px 10px;
+    margin:2px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 60%;
+}
+.filtre ul li:active,
+.filtre ul li.active{
+    border-left: 1px solid var(--col-txt);
+    border-right: 1px solid var(--col-txt);
+    box-shadow: 0px 0px 3px var(--col-txt);
+}
+.filtre ul li:hover{
+    border-left: 1px solid var(--col-txt);
+    border-right: 1px solid var(--col-txt);
+}
+.filtre2{
+    transform-origin: top;
+    transform: scaleY(0);
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.list-tag ul li:hover{
-    background-color: #4c4c4c3a;
-}
-.list-tag ul li.selected{
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-}
-.tags3 .create-tag{
-    border-radius: 20px;
-    width: 45%;
-    height: 95%;
-    border: 1px solid whitesmoke;
-}
-.create-tag h1{
-    text-align: center;
-}
-.create-tag .input-box{
     position: relative;
-    margin-left: 2.5%;
-    width: 95%;
-    height: 40px;
-    border-bottom: 1px solid whitesmoke;
 }
-.create-tag .input-box input{
+.filtre2 h1{
     font-size: 1.2em;
-    color: whitesmoke;
-    font-family: cursive;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
 }
-.create-tag .input-box label{
-    cursor: text;
-    color: #8f94fb;
-    user-select: none;
+.filtre2 h1,
+.filtre2 ul,
+.filtre2 ul li{
+    display: inline-block;
+}
+.filtre2 ul li{
+    padding: 10px;
+    margin: 0px 1px;
+    height: 100%;
+    border: 1px solid var(--col-txt);
+}
+
+@media screen and (max-width:1220px) {
+    .filtre{
+        display: none;
+    }
+    .filtre2{
+        transform: scaleY(1);
+    }
+    .tag-list{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .filtre2 h1{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    
+    section{
+        margin-top: 60px;
+        width: 95vw;
+    }
+}
+
+
+
+
+
+/*background et header*/
+header{
+    z-index: 999999;
+    background-color: var(--col-header);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.head-left{
+    height: 100%;
     position: absolute;
-    top: 15%;
     left: 0;
 }
-.create-tag .input-box input:focus ~ label,
-.create-tag .input-box input:valid ~ label{
-    top: -30%;
-}
-.ok_tag{
-    cursor: pointer;
-    color: white;
-    font-family: cursive;
-    font-size: 1.2em;
-    border: none;
-    outline: none;
-    padding: 10px;margin: 20px 10px;
-    background-color: transparent;
-    border:1px solid #fff;
-    border-radius: 20px;
-}
-.ok_tag:hover{
-    box-shadow: 0px 0px 5px whitesmoke;
-}
-.buttons3{
-    margin-left: 2%;
-    width: 95%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.buttons3 button{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: whitesmoke;
-    font-size: 1.1em;
-    font-family: cursive;
-    margin: 0px 10px;
-    padding: 0px 5px;
-    cursor: pointer;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Les animations*/
-@keyframes toLeft {
-    0%{
-        left: 0;
-    }
-    100%{
-        left:-100%;
-    }
-}
-@keyframes toRight {
-    0%{
-        left: 0;
-    }
-    100%{
-        left:100%;
-    }
-}
-@keyframes fromLeft {
-    0%{
-        left: -100%;
-    }
-    100%{
-        left: 0;
-    }
-}
-@keyframes fromRight {
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: 0%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .head-right{
     position: absolute;
     right: 0;

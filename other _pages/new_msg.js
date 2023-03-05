@@ -24,8 +24,8 @@ document.getElementById('next1').addEventListener('click',function(e) {
     }
 })
 
-var contenu_msg=[];
 
+var contenu_msg=[];
 document.querySelector('.image').addEventListener('click',function(e) {
     var contenu=`
         <label for="file_in" id="img_lab">cliquer içi pour ajouter l'image</label>
@@ -46,7 +46,7 @@ document.querySelector('.image').addEventListener('click',function(e) {
 
 
 document.querySelector('.texte').addEventListener('click',function(e) {
-    var contenu=`<textarea name="textarea" id="text_cont" cols="100" rows="5"></textarea>`
+    var contenu=`<textarea name="textarea" id="text_cont"></textarea>`
     var child =document.createElement('div');
     child.setAttribute("class","texte_in");
     child.innerHTML=contenu.trim();
